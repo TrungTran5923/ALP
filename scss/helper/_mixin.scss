@@ -1,0 +1,44 @@
+@mixin posAbsolute($direction, $y, $x) {
+    position: absolute;
+
+    @if ($direction == "tl") {
+        top: $y;
+        left: $x;
+    }
+    @if ($direction == "tr") {
+        top: $y;
+        right: $x;
+    }
+    @if ($direction == "bl") {
+        bottom: $y;
+        left: $x;
+    }
+    @if ($direction == "centerX") {
+        top: $y;
+        left: $x;
+        transform: translateX(-50%);
+    }
+    @if ($direction == "centerY") {
+        top: $y;
+        left: $x;
+        transform: translateY(-50%);
+    }
+    @if ($direction == "center") {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin flexBox($align-item: none, $justify: none) {
+    display: flex;
+    @if ($align-item == "center") {
+        align-items: center;
+    }
+    @if ($justify == "between") {
+        justify-content: space-between;
+    }
+    @if ($justify == "center") {
+        justify-content: center;
+    }
+}

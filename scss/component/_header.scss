@@ -1,0 +1,209 @@
+.s-header {
+    background-color: $color-white;
+    padding: 10px;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 5;
+    .container {
+        .b-topheader {
+            @include flexBox(center, between);
+            height: 100px;
+            border-bottom: 1px solid $color-black-40;
+            .b-brandname {
+                p {
+                    color: $color-black;
+                    margin: 0;
+                    font-size: $fs-22;
+                    letter-spacing: 5px;
+                }
+            }
+            .b-logo {
+                width: 180px;
+                height: 180px;
+                margin: 0;
+                overflow: hidden;
+                transform: translateX(50px);
+                @include flexBox(center, center);
+                img {
+                    width: 220px;
+                }
+            }
+            .b-function {
+                width: 350px;
+                @include flexBox(center, between);
+                .b-search {
+                    border: 1px solid $color-lighterblack;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    input {
+                        background-color: $transparent;
+                    }
+                    i {
+                        color: $color-black;
+                        font-size: $fs-20;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+                .b-cart {
+                    position: relative;
+                    i {
+                        color: $color-black;
+                        font-size: $fs-20;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    .b-cart-amount {
+                        opacity: 0;
+                        @include posAbsolute(tr, -10px, -14px);
+                        width: 20px;
+                        height: 20px;
+                        background-color: $secondary-color;
+                        border-radius: 20px;
+                        @include flexBox(center, center);
+                        span {
+                            font-size: $fs-12;
+                        }
+                    }
+                }
+                .b-account {
+                    i {
+                        color: $color-black;
+                        font-size: $fs-20;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .b-botheader {
+            padding-top: 10px;
+            height: 80px;
+            @include flexBox(center, between);
+            .b-logo {
+                width: 10%;
+                display: none;
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+            .b-menu {
+                transform: translateX(400px);
+                > ul {
+                    width: 500px;
+                    margin: 0 auto;
+                    @include flexBox(center, between);
+
+                    li {
+                        position: relative;
+                        a {
+                            transition: 0.5s;
+                        }
+                        &:hover {
+                            > a {
+                                color: $primary-color;
+                            }
+                            &::before {
+                                width: 100%;
+                            }
+                            > .b-submenu {
+                                opacity: 1;
+                                visibility: visible;
+                                @include posAbsolute(tl, 30px, -20px);
+                                z-index: 5;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            width: 0;
+                            height: 1.5px;
+                            background-color: $primary-color;
+                            @include posAbsolute(centerX, 22px, 50%);
+                            transition: 0.5s;
+                        }
+                        .b-submenu {
+                            @include posAbsolute(tl, 10px, -20px);
+                            z-index: 5;
+                            opacity: 0;
+                            visibility: hidden;
+                            background-color: $color-white;
+                            width: 160px;
+                            padding: 10px 10px;
+                            transition: 0.5s;
+                            box-shadow: $primary-color-50 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                            li {
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .b-function {
+                width: 100px;
+                opacity: 0;
+                @include flexBox(center, between);
+                .b-cart {
+                    position: relative;
+                    i {
+                        color: $color-black;
+                        font-size: $fs-20;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    .b-cart-amount {
+                        opacity: 0;
+                        @include posAbsolute(tr, -10px, -14px);
+                        width: 20px;
+                        height: 20px;
+                        background-color: $secondary-color;
+                        border-radius: 20px;
+                        @include flexBox(center, center);
+                        span {
+                            font-size: $fs-12;
+                        }
+                    }
+                }
+                .b-account {
+                    i {
+                        color: $color-black;
+                        font-size: $fs-20;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.active {
+        border-bottom: 1px solid $primary-color-50;
+        position: fixed;
+        z-index: 5;
+        .container {
+            .b-topheader {
+                display: none;
+            }
+            .b-botheader {
+                .b-logo {
+                    display: block;
+                }
+            }
+            .b-menu {
+                transform: translate(-10px);
+            }
+            .b-function {
+                opacity: 1;
+            }
+        }
+    }
+}

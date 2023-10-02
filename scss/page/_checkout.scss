@@ -1,0 +1,59 @@
+.s-body {
+    .b-bill-detail {
+        h4 {
+            margin-bottom: 30px;
+        }
+        .b-form-bill {
+            p {
+                margin: 0;
+            }
+            .b-form-detail {
+                width: 800px;
+                margin-bottom: 20px;
+                @include flexBox(center, between);
+                input {
+                    border: 1px solid $color-black;
+                    width: 70%;
+                    padding: 10px 20px;
+                }
+                textarea {
+                    width: 70%;
+                    height: 100px;
+                    padding: 10px 20px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .b-bill-order {
+        background-color: $primary-color-50;
+        padding: 30px 30px;
+        p {
+            margin: 0;
+        }
+        .price {
+            font-weight: $fw-600;
+        }
+        .total {
+            font-weight: $fw-600;
+        }
+        .title {
+            font-weight: $fw-600;
+        }
+        .b-order-content {
+            @include flexBox(center, between);
+            border-bottom: 1px solid $color-black-40;
+            padding: 20px;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .b-ordertop {
+            font-weight: $fw-600;
+            border-bottom: 1px solid $color-black-40;
+        }
+        .b-orderbody {
+            border-bottom: 3px solid $color-black-40;
+        }
+    }
+}

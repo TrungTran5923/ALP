@@ -1,0 +1,73 @@
+.c-btn1 {
+    width: 180px;
+    height: 60px;
+    padding: 8px 18px;
+    border-radius: 0px 10px 0px 10px;
+    font-size: $fs-20;
+    background-color: $primary-color;
+    color: $color-white;
+    position: relative;
+    &:hover {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+        }
+    }
+    &::before {
+        @include posAbsolute(tl, 0, 0);
+        content: "";
+        background-color: $secondary-color;
+        border-radius: 0px 10px 0px 10px;
+        width: 0;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    span {
+        width: 100%;
+        @include posAbsolute(center, 50%, 50%);
+        z-index: 2;
+    }
+}
+.c-btn2 {
+    width: 180px;
+    height: 60px;
+    padding: 8px 18px;
+    border: 1px solid $primary-color;
+    border-radius: 0px 10px 0px 10px;
+    font-size: $fs-20;
+    background-color: $transparent;
+    color: $primary-color;
+    position: relative;
+    &:hover {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+        }
+        span {
+            color: $color-white;
+        }
+    }
+    &::before {
+        @include posAbsolute(tl, 0, 0);
+        content: "";
+        background-color: $primary-color;
+        border-radius: 0px 10px 0px 10px;
+        width: 0;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    span {
+        width: 100%;
+        transition: 0.5s;
+        @include posAbsolute(center, 50%, 50%);
+        z-index: 2;
+    }
+}

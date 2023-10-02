@@ -1,0 +1,52 @@
+.c-card-product {
+    text-align: center;
+    .c_card-img {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        img {
+            transition: 1s;
+            width: 320px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .c_discount {
+            @include posAbsolute(tr, 10px, 10px);
+            background-color: $secondary-color;
+            color: $color-white;
+            padding: 5px 10px;
+        }
+        .c_hot {
+            @include posAbsolute(bl, 0, 0);
+            width: 100%;
+            background-color: $primary-color-50;
+            color: $color-white;
+            padding: 5px;
+            font-style: italic;
+        }
+    }
+    .c_card-content {
+        margin-top: 20px;
+        .c_price {
+            width: 120px;
+            margin: 0 auto;
+            @include flexBox(center, between);
+            span {
+                margin: 0;
+            }
+            font-family: $ff-secondary;
+            .c_discount-price {
+                color: $color-black-60;
+                text-decoration: line-through;
+            }
+            .c_real-price {
+                font-size: $fs-20;
+                color: $primary-color;
+            }
+        }
+    }
+}

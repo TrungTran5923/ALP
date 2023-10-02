@@ -1,0 +1,6 @@
+{
+    "product": [{}],
+    "user": [{}],
+    "order": [{}],
+    "banner": [{ "img": "img/headbanner/hdbanner-1.jpg" }, { "img": "img/headbanner/hdbanner-2.jpg" }, { "img": "img/headbanner/hdbanner-2.jpg" }]
+}

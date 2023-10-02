@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detail</title>
+        <link rel="shortcut icon" href="img/logo/ALP - shortcut icon.png" type="image/svg+xml" />
+        <!-- nhúng các thư viện ngoài vào đây -->
+        <!-- bs5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- fontgg -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- icon -->
+        <link rel="stylesheet" href="sub/css/all.min.css" />
+        <!-- nhúng các css tự viết -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="s-header"></div>
+        <div class="s-detail">
+            <div class="container">
+                <div class="row b-product-detail">
+                    <div class="col-lg-2 b-subimg">
+                        <img src="img/product/handbag/detail/blue-1.jpeg" alt="" />
+                        <img src="img/product/handbag/detail/blue-2.jpeg" alt="" />
+                        <img src="img/product/handbag/detail/blue-3.jpeg" alt="" />
+                    </div>
+                    <div class="col-lg-5 b-mainimg">
+                        <!-- <img src="img/product/handbag/detail/blue-1.jpeg" alt="" /> -->
+                    </div>
+                    <div class="col-lg-5 b-product-info">
+                        <h2 class="b-product-name">Blue ALP Handbag</h2>
+                        <p class="b-product-price"><span class="b-product-disprice">$999</span> $<span>800</span></p>
+                        <p class="b-product-reason">
+                            We're thrilled to launch our new handbag collection to keep you on-trend and cater to your evolving style preferences. Fashion is dynamic, and our commitment to innovation
+                            drives us to continually create fresh, trendy, and timeless designs. With each new collection, we aim to offer a diverse range of options, allowing you to express your
+                            unique style and stay ahead of fashion trends.
+                        </p>
+                        <div class="b-info-detail color">
+                            <p>Color: <span>Blue</span></p>
+                        </div>
+                        <div class="b-info-detail material">
+                            <p>Material: <span>Cactus</span></p>
+                        </div>
+                        <div class="b-addtocart">
+                            <div class="amount">
+                                <span>1</span>
+                                <div class="amount-btn">
+                                    <i id="plus" class="fa-solid fa-angle-up plus"></i>
+                                    <br />
+                                    <i id="minus" class="fa-solid fa-angle-down minus"></i>
+                                </div>
+                            </div>
+                            <button class="c-btn1"><span>ADD TO CART</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product-descrip">
+                    <div class="b-tab">
+                        <p class="active" data-tab="descrip">DESCRIPTION</p>
+                        <p data-tab="info">ADDITONAL INFOMATION</p>
+                    </div>
+                    <div class="b-info">
+                        <div class="section">
+                            <p class="active" data-tab="descrip">
+                                Dimensions: 24 x 20 x 7.5 cm. <br />
+                                Weight: 386 g. <br />
+                                Adjustable straps in two lengths: 106 cm and 138 cm. <br />
+                                Interior pocket. <br />
+                                Zippered outer pocket.
+                            </p>
+                            <p data-tab="info">
+                                In addition to their stunning aesthetic appeal, our cactus-based handbags also come with an eco-friendly twist. These bags are not only fashionable but also
+                                sustainable. Cactus leather, also known as cactus vegan leather, is an eco-conscious alternative to traditional leather made from animal hides. Harvesting cactus for
+                                leather production is a highly sustainable process, as cactus plants require minimal water and land to grow, making them an environmentally friendly choice.
+                                Furthermore, cactus leather is cruelty-free and free from harmful chemicals often associated with traditional leather tanning processes. It offers the same level of
+                                durability and quality that you'd expect from high-quality leather, ensuring your handbag will stand the test of time. By choosing a handbag made of cactus leather,
+                                you're not only making a fashion statement but also contributing to a more sustainable and ethical fashion industry. It's a win-win for both your style and the planet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button id="more" class="c-btn1 more"><span>SHOW MORE</span></button>
+                        <button id="less" class="c-btn1 less" style="display: none"><span>SHOW LESS</span></button>
+                    </div>
+                </div>
+                <div class="b-suggest">
+                    <h3 class="b-suggest-title">YOU MAY ALSO LIKE</h3>
+                    <div class="b-suggest-list">
+                        <div class="c-card-product">
+                            <div class="c_card-img">
+                                <img src="img/product/handbag/hb-3.webp" alt="" />
+                                <div class="c_discount"><span>20%</span></div>
+                                <div class="c_hot">HOT</div>
+                            </div>
+                            <div class="c_card-content">
+                                <h4>Light Blue Handbag</h4>
+                                <div class="c_price">
+                                    <p class="c_discount-price">$<span>89.99</span></p>
+                                    <p class="c_real-price">$<span>79.99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-card-product">
+                            <div class="c_card-img">
+                                <img src="img/product/handbag/hb-4.webp" alt="" />
+                                <div class="c_discount"><span>20%</span></div>
+                                <div class="c_hot">HOT</div>
+                            </div>
+                            <div class="c_card-content">
+                                <h4>Purple Pastel Handbag</h4>
+                                <div class="c_price">
+                                    <p class="c_discount-price">$<span>89.99</span></p>
+                                    <p class="c_real-price">$<span>79.99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-card-product">
+                            <div class="c_card-img">
+                                <img src="img/product/purse/p-2.webp" alt="" />
+                                <div class="c_discount"><span>20%</span></div>
+                                <div class="c_hot">HOT</div>
+                            </div>
+                            <div class="c_card-content">
+                                <h4>Blue Purse</h4>
+                                <div class="c_price">
+                                    <p class="c_discount-price">$<span>89.99</span></p>
+                                    <p class="c_real-price">$<span>79.99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-card-product">
+                            <div class="c_card-img">
+                                <img src="img/product/purse/p-3.webp" alt="" />
+                                <div class="c_discount"><span>20%</span></div>
+                                <div class="c_hot">HOT</div>
+                            </div>
+                            <div class="c_card-content">
+                                <h4>Black Purse</h4>
+                                <div class="c_price">
+                                    <p class="c_discount-price">$<span>89.99</span></p>
+                                    <p class="c_real-price">$<span>79.99</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-footer"></div>
+        <script src="js/base.js"></script>
+        <script src="js/detail.js"></script>
+    </body>
+</html>

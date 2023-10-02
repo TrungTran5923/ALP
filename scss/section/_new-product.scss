@@ -1,0 +1,30 @@
+.s-newproduct {
+    text-align: center;
+    margin-top: 40px;
+    color: $color-black;
+    height: 600px;
+    .s_newproduct-type {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include flexBox(center, between);
+        color: $color-black-60;
+        h5 {
+            cursor: pointer;
+            &.active {
+                color: $primary-color;
+            }
+        }
+    }
+    .s_newproduct-list {
+        @include flexBox(center, center);
+        gap: 10px;
+        transform: translateY(50px);
+        display: none;
+        &.active {
+            transform: translateY(0);
+            @include flexBox(center, center);
+        }
+    }
+}

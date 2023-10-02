@@ -1,0 +1,66 @@
+.s-testimonial {
+    text-align: center;
+    color: $color-black;
+    margin-top: 80px;
+    i {
+        font-size: $fs-64;
+        margin-bottom: 20px;
+    }
+    .b-testi {
+        position: relative;
+        height: 200px;
+        .b-testi-slide {
+            @include posAbsolute(tl, 0, 0);
+            .b-testi-feedback {
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            .b-title {
+                color: $color-black-60;
+            }
+            &:nth-child(1) {
+                opacity: 0;
+            }
+            &:nth-child(2) {
+                opacity: 1;
+            }
+            &:nth-child(3) {
+                opacity: 0;
+            }
+        }
+    }
+
+    .b-change {
+        @include flexBox(center, between);
+        width: 70px;
+        margin: 0 auto;
+        margin-top: 30px;
+        cursor: pointer;
+        div {
+            width: 14px;
+            height: 14px;
+            border-radius: 20px;
+            background-color: $color-black;
+            position: relative;
+            &.active {
+                background-color: $primary-color;
+                transform: translateY(-8px);
+                &::after {
+                    content: "";
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid $primary-color;
+                    border-radius: 20px;
+                    @include posAbsolute(center, 50%, 50%);
+                }
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

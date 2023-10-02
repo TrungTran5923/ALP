@@ -1,0 +1,88 @@
+.s-shopbanner {
+    @include flexBox(center);
+    width: 100%;
+    gap: 10px;
+    overflow-x: scroll;
+
+    img {
+        width: calc(100% / 4);
+        height: 350px;
+    }
+}
+.s-body {
+    margin-top: 30px;
+    color: $color-black;
+
+    .container {
+        .s-breadcrumb {
+            @include flexBox(center);
+
+            a {
+                color: $color-black-50;
+                margin-right: 10px;
+            }
+        }
+        .s-title {
+            color: $color-black;
+            font-weight: $fw-600;
+            margin: 50px 0;
+        }
+        .s-body-content {
+            .b-filter {
+                .b-filter-option {
+                    margin-bottom: 50px;
+                    h5 {
+                        margin-bottom: 20px;
+                    }
+                    ul {
+                        color: $color-black-60;
+                        li {
+                            margin-bottom: 10px;
+                            @include flexBox(center);
+                            div {
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                text-align: center;
+                .b-filter-text {
+                    @include flexBox(center);
+                    margin-bottom: 20px;
+                    h6 {
+                        color: $primary-color;
+                        margin: 0;
+                        margin-right: 20px;
+                    }
+                    p {
+                        color: $color-black-60;
+                        margin: 0;
+                        span {
+                            color: $color-black;
+                            font-weight: $fw-600;
+                        }
+                    }
+                }
+                .b-list-card {
+                    @include flexBox(center);
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    .c-card-product {
+                        width: calc(100% / 3 - 10px);
+                    }
+                }
+            }
+        }
+    }
+}

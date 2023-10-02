@@ -1,0 +1,133 @@
+.s-detail {
+    color: $color-black;
+    padding-top: 50px;
+
+    .b-product-detail {
+        .b-subimg {
+            width: 200px;
+            height: 220px;
+            img {
+                margin-bottom: 10px;
+                filter: opacity(0.6);
+            }
+        }
+        .b-mainimg {
+            width: 500px;
+            height: 759px;
+            margin-right: 20px;
+            background-image: url("/img/product/handbag/detail/blue-1.jpeg");
+            background-size: cover;
+            // img {
+            //     height: 759px;
+            //     object-fit: cover;
+            // }
+            &:hover {
+                background-size: 175%;
+            }
+        }
+        .b-product-info {
+            .b-product-name {
+                font-size: $fs-36;
+            }
+            .b-product-price {
+                font-family: $ff-secondary;
+                font-weight: $fw-400;
+                font-size: $fs-28;
+                color: $primary-color;
+                .b-product-disprice {
+                    color: $color-black-40;
+                    text-decoration: line-through;
+                    font-size: $fs-20;
+                }
+            }
+            .b-product-reason {
+                color: $color-black-60;
+            }
+            .b-addtocart {
+                @include flexBox(center);
+                .amount {
+                    border: 1px solid $color-black-40;
+                    width: 100px;
+                    height: 60px;
+                    padding: 8px 14px;
+                    margin-right: 20px;
+                    @include flexBox(center, between);
+                    span {
+                        font-size: $fs-20;
+                        transform: translateX(10px);
+                    }
+                    i {
+                        font-size: $fs-20;
+                        color: $color-black-50;
+                    }
+                }
+            }
+        }
+    }
+    .b-product-descrip {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+        .b-tab {
+            @include flexBox(center, center);
+            margin-bottom: 20px;
+            p {
+                margin: 20px;
+                font-weight: $fw-600;
+                position: relative;
+                color: $color-black-50;
+                cursor: pointer;
+                &.active {
+                    color: $color-black;
+                    &::after {
+                        content: "";
+                        background-color: $color-black;
+                        height: 3px;
+                        width: 20px;
+                        @include posAbsolute(centerX, 24px, 50%);
+                    }
+                }
+                &::after {
+                    content: "";
+                    background-color: $color-black;
+                    height: 3px;
+                    width: 0;
+                    @include posAbsolute(centerX, 24px, 50%);
+                }
+            }
+        }
+        .b-info {
+            .section {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+                &.active {
+                    -webkit-line-clamp: unset;
+                }
+                p {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+        margin-top: 30px;
+        @include flexBox(center, center);
+    }
+    .b-suggest {
+        text-align: center;
+        margin-top: 100px;
+        .b-suggest-title {
+            font-weight: $fw-600;
+            margin-bottom: 50px;
+        }
+        .b-suggest-list {
+            @include flexBox(center);
+            gap: 10px;
+        }
+    }
+}

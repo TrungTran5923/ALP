@@ -1,0 +1,85 @@
+.s-footer {
+    background-color: $primary-color;
+    margin-top: 100px;
+    .s_top {
+        @include flexBox(center, between);
+        border-bottom: 1px solid $color-white-50;
+        padding-bottom: 80px;
+        height: 320px;
+        .s_left {
+            width: 500px;
+            .s_logo {
+                width: 200px;
+                margin-bottom: 10px;
+                background-color: $color-white;
+                border-radius: 50%;
+                transform: translateY(-10px);
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .s_info {
+                .s_info-detail {
+                    margin-bottom: 10px;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .s_social {
+                i {
+                    font-size: $fs-24;
+                    margin-right: 10px;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+        .s_mid {
+            width: 500px;
+            margin-top: 50px;
+            ul {
+                transform: translateY(20px);
+                li {
+                    a {
+                        color: $color-white;
+                        font-size: $fs-18;
+                        transition: 0.5s;
+                        &:hover {
+                            color: $secondary-color;
+                            margin-left: 10px;
+                        }
+                    }
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .s_right {
+            .s_email {
+                padding: 10px 20px;
+                border-bottom: 1px solid $color-white;
+                @include flexBox(center, between);
+                input {
+                    background-color: $transparent;
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    .s_bottom {
+        @include flexBox(center, between);
+        padding: 20px 0;
+        p {
+            margin: 0;
+        }
+        .s_pay {
+            i {
+                font-size: $fs-32;
+            }
+        }
+    }
+}

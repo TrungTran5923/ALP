@@ -1,0 +1,35 @@
+.s-sale {
+    text-align: center;
+    background-image: url("/img/salebanner/salebanner3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 70px;
+    padding: 20px;
+    height: 350px;
+    position: relative;
+    .s_sale-text {
+        @include posAbsolute(center, 50%, 50%);
+        width: 80%;
+        p {
+            letter-spacing: 10px;
+        }
+        h2 {
+            font-size: $fs-36;
+            span {
+                color: $primary-color;
+                font-size: $fs-50;
+            }
+        }
+        button {
+            font-size: $fs-16;
+            margin-top: 10px;
+        }
+    }
+    &::before {
+        content: "";
+        background-color: $color-black-50;
+        width: 100%;
+        height: 100%;
+        @include posAbsolute(tl, 0, 0);
+    }
+}
