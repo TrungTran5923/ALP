@@ -47,7 +47,7 @@ function renderHeader() {
             </div>
             <div class="b-account">
                 <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
-                <i class="fa-solid fa-right-to-bracket login"></i>
+                <i class="fa-solid fa-right-to-bracket login" onclick="showPage('login')"></i>
             </div>
         </div>
     </div>
@@ -96,7 +96,7 @@ function renderHeader() {
             </div>
             <div class="b-account">
                 <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
-                <i class="fa-solid fa-right-to-bracket login"></i>
+                <i class="fa-solid fa-right-to-bracket login" onclick="showPage('login')"></i>
             </div>
         </div>
     </div>
