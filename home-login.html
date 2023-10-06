@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="shortcut icon" href="img/logo/ALP - shortcut icon.png" type="image/svg+xml" />
+        <!-- nhúng các thư viện ngoài vào đây -->
+        <!-- bs5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- fontgg -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- icon -->
+        <link rel="stylesheet" href="sub/css/all.min.css" />
+        <!-- nhúng các css tự viết -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="s-header"></div>
+        <div class="s-headbanner">
+            <div class="b-slide">
+                <div class="b-banner-slide">
+                    <div class="b-banner-img">
+                        <img src="img/headbanner/hdbanner1.webp" alt="" />
+                    </div>
+                    <div class="b-content">
+                        <h2><span>New Collection</span> for Cozy Autumn</h2>
+                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="b-banner-slide">
+                    <div class="b-banner-img">
+                        <img src="img/headbanner/hdbanner2.webp" alt="" />
+                    </div>
+                    <div class="b-content">
+                        <h2><span>New Collection</span> for Chill Summer</h2>
+                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+                <div class="b-banner-slide">
+                    <div class="b-banner-img">
+                        <img src="img/headbanner/hdbanner3.webp" alt="" />
+                    </div>
+                    <div class="b-content">
+                        <h2><span>New Collection</span> for Chill Summer</h2>
+                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="b-navigation-button">
+                <span class="dot active" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+                <span class="dot" onclick="changeSlide(2)"></span>
+            </div>
+        </div>
+        <div class="s-category">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                        <div class="b-card-img"><img src="img/category/cate-birkin.jpeg" alt="" /></div>
+                        <h3>Birkin</h3>
+                    </div>
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                        <div class="b-card-img"><img src="img/category/cate-handbag.jpeg" alt="" /></div>
+                        <h3>Handbag</h3>
+                    </div>
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                        <div class="b-card-img">
+                            <img src="img/category/cate-purse.jpeg" alt="" />
+                        </div>
+                        <h3>Purse</h3>
+                    </div>
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                        <div class="b-card-img"><img src="img/category/cate-access.jpeg" alt="" /></div>
+                        <h3>Accessories</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-newproduct">
+            <div class="container">
+                <h2 class="s_new-title">NEW PRODUCTS</h2>
+                <div class="s_newproduct-type">
+                    <h5 class="active" id="birkin">Birkin</h5>
+                    <h5 id="handbag">Handbag</h5>
+                    <h5 id="purse">Purse</h5>
+                    <h5 id="access">Accessories</h5>
+                </div>
+                <div class="s_newproduct-list active" data-id="birkin">
+                    <div class="c-card-product" onclick="showPage('detail')">
+                        <div class="c_card-img">
+                            <img src="img/product/birkin/bk-1.jpeg" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Pink Pastel Birkin</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>799</span></p>
+                                <p class="c_real-price">$<span>899</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/birkin/bk-2.jpeg" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Blue Pastel Birkin</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>750</span></p>
+                                <p class="c_real-price">$<span>790</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/birkin/bk-3.jpeg" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Grey Birkin</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>999</span></p>
+                                <p class="c_real-price">$<span>1200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/birkin/bk-4.jpeg" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Navy Birkin</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s_newproduct-list" data-id="handbag">
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/handbag/hb-1.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Grey Neutral Handbag</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/handbag/hb-2.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Yellow Pastel Handbag</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/handbag/hb-3.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Light Blue Handbag</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/handbag/hb-4.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Purple Pastel Handbag</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s_newproduct-list" data-id="purse">
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/purse/p-1.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Yellow Purse</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/purse/p-2.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Blue Purse</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/purse/p-3.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Black Purse</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/purse/p-4.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Brown Purse</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s_newproduct-list" data-id="access">
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/access/ac-1.avif" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Velvet Keychain</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/access/ac-2.jpg" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Black Coin Pocket</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/access/ac-3.avif" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Red Keychain</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-card-product">
+                        <div class="c_card-img">
+                            <img src="img/product/access/ac-4.webp" alt="" />
+                            <div class="c_discount"><span>20%</span></div>
+                            <div class="c_hot">HOT</div>
+                        </div>
+                        <div class="c_card-content">
+                            <h4>Orange Keychain</h4>
+                            <div class="c_price">
+                                <p class="c_discount-price">$<span>89.99</span></p>
+                                <p class="c_real-price">$<span>79.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-sale">
+            <div class="s_sale-text">
+                <p>All Products for Sale</p>
+                <h2>SALE END IN <span class="day">1</span> DAYS <span class="hour">1</span> HOURS <span class="minute">1</span> MINUTES <span class="second">1</span></h2>
+                <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+            </div>
+        </div>
+        <div class="s-testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="b-testi">
+                <div class="b-testi-slide">
+                    <p class="b-testi-feedback">
+                        I stumbled upon this online bag shop, and I'm so glad I did! The selection is fantastic, and I found a bag that perfectly matches my style. The ordering process was a breeze,
+                        and my bag arrived in pristine condition, beautifully packaged. The quality is outstanding, and I've already received compliments. I'll definitely be a repeat customer. Highly
+                        recommend!
+                    </p>
+                    <h5>Alex Nguyen</h5>
+                    <p class="b-title">Customer</p>
+                </div>
+                <div class="b-testi-slide">
+                    <p class="b-testi-feedback">
+                        This online bag shop is a game-changer! I recently made my first purchase, and I was blown away by the quality of the bag and the smooth shopping experience. The website is
+                        user-friendly, and I found exactly what I was looking for in no time. The bag arrived quickly, and it exceeded my expectations in terms of both style and durability. I can't
+                        wait to shop here again!
+                    </p>
+                    <h5>Trung Tran</h5>
+                    <p class="b-title">Founder</p>
+                </div>
+                <div class="b-testi-slide">
+                    <p class="b-testi-feedback">
+                        This online bag shop is a hidden gem! I was on the hunt for a unique and stylish bag, and I struck gold here. The variety of bags they offer is impressive, and I found one that
+                        suits my personality perfectly. The checkout process was straightforward, and my bag arrived swiftly. The craftsmanship and attention to detail are exceptional. I'm thrilled
+                        with my purchase and will be sharing this fantastic find with my friends!
+                    </p>
+                    <h5>Jimmy Nguyen</h5>
+                    <p class="b-title">Customer</p>
+                </div>
+            </div>
+            <div class="b-change">
+                <div onclick="changeSlideTesti(0)"></div>
+                <div class="active" onclick="changeSlideTesti(1)"></div>
+                <div onclick="changeSlideTesti(2)"></div>
+            </div>
+        </div>
+        <div class="s-gallery">
+            <div class="b-galleryshow">
+                <img src="img/gallery/gallery-1.jpeg" alt="" />
+                <img src="img/gallery/gallery-2.jpeg" alt="" />
+                <img src="img/gallery/gallery-3.jpeg" alt="" />
+                <img src="img/gallery/gallery-4.webp" alt="" />
+                <img src="img/gallery/gallery-5.jpeg" alt="" />
+            </div>
+            <div class="b-popup">
+                <span class="slide-controll prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </span>
+                <div class="b-popup-img">
+                    <img src="img/gallery/gallery-1.jpeg" alt="" />
+                </div>
+                <span class="slide-controll next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+        </div>
+        <div class="s-footer"></div>
+        <!-- nhúng các thư viện ngoài vào đây -->
+        <!-- nhúng các script tự viết vào đây -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/home-login.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

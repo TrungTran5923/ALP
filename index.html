@@ -33,7 +33,7 @@
                     <div class="b-content">
                         <h2><span>New Collection</span> for Cozy Autumn</h2>
                         <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1"><span>SHOP NOW</span></button>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
                     </div>
                 </div>
                 <div class="b-banner-slide">
@@ -43,7 +43,7 @@
                     <div class="b-content">
                         <h2><span>New Collection</span> for Chill Summer</h2>
                         <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1"><span>SHOP NOW</span></button>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
                     </div>
                 </div>
                 <div class="b-banner-slide">
@@ -53,7 +53,7 @@
                     <div class="b-content">
                         <h2><span>New Collection</span> for Chill Summer</h2>
                         <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1"><span>SHOP NOW</span></button>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
                     </div>
                 </div>
             </div>
@@ -66,21 +66,21 @@
         <div class="s-category">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="b-cate-card col-lg-3">
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-birkin.jpeg" alt="" /></div>
                         <h3>Birkin</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3">
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-handbag.jpeg" alt="" /></div>
                         <h3>Handbag</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3">
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
                         <div class="b-card-img">
                             <img src="img/category/cate-purse.jpeg" alt="" />
                         </div>
                         <h3>Purse</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3">
+                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-access.jpeg" alt="" /></div>
                         <h3>Accessories</h3>
                     </div>
@@ -97,21 +97,21 @@
                     <h5 id="access">Accessories</h5>
                 </div>
                 <div class="s_newproduct-list active" data-id="birkin">
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
-                            <img src="img/product/birkin/bk-1.jpeg" alt="" />
+                            <img src="img/product/birkin/bk-1.jpeg" />
                             <div class="c_discount"><span>20%</span></div>
                             <div class="c_hot">HOT</div>
                         </div>
                         <div class="c_card-content">
                             <h4>Pink Pastel Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price">$<span>799</span></p>
+                                <p class="c_real-price">$<span>899</span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-2.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -120,12 +120,12 @@
                         <div class="c_card-content">
                             <h4>Blue Pastel Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price">$<span>750</span></p>
+                                <p class="c_real-price">$<span>790</span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-3.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -134,12 +134,12 @@
                         <div class="c_card-content">
                             <h4>Grey Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price">$<span>999</span></p>
+                                <p class="c_real-price">$<span>1200</span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-4.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -334,7 +334,7 @@
             <div class="s_sale-text">
                 <p>All Products for Sale</p>
                 <h2>SALE END IN <span class="day">1</span> DAYS <span class="hour">1</span> HOURS <span class="minute">1</span> MINUTES <span class="second">1</span></h2>
-                <button class="c-btn1"><span>SHOP NOW</span></button>
+                <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
             </div>
         </div>
         <div class="s-testimonial">

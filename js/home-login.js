@@ -17,14 +17,14 @@ function renderHeader() {
             <p>Accessoire la plante</p>
         </div>
         <div class="b-logo">
-            <img src="img/logo/ALP - img.png" onclick="showPage('index')" />
+            <img src="img/logo/ALP - img.png" alt="" />
         </div>
         <div class="b-function">
             <div class="b-search">
                 <input type="text" placeholder="Search your products" />
                 <i class="fa-regular fa-magnifying-glass"></i>
             </div>
-            <div class="b-cart" onclick="showPage('cart')" >
+            <div class="b-cart" href="cart.html">
                 <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                 <div class="b-cart-amount"><span>1</span></div>
                 <div class="b-cart-hover">
@@ -46,14 +46,14 @@ function renderHeader() {
                 </div>
             </div>
             <div class="b-account">
-                <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
-                <i class="fa-solid fa-right-to-bracket login"></i>
+                <i class="fa-sharp fa-solid fa-user user" ></i>
+                <i class="fa-solid fa-right-to-bracket login" style="display: none"></i>
             </div>
         </div>
     </div>
     <div class="b-botheader">
         <div class="b-logo">
-            <img src="img/logo/ALP - Logofull final.png" onclick="showPage('index')" />
+            <img src="img/logo/ALP - Logofull final.png" alt="" />
         </div>
         <div class="b-menu">
             <ul>
@@ -73,12 +73,12 @@ function renderHeader() {
             </ul>
         </div>
         <div class="b-function">
-            <div class="b-cart" onclick="showPage('cart')">
-                <i class="fa-sharp fa-solid fa-cart-shopping" ></i>
+            <div class="b-cart">
+                <i class="fa-sharp fa-solid fa-cart-shopping" href="cart.html"></i>
                 <div class="b-cart-amount"><span>1</span></div>
                 <div class="b-cart-hover">
                     <p class="note" style="display: none">Your cart is empty</p>
-                    <div class="b-cart-content" onclick="showPage('cart')">
+                    <div class="b-cart-content">
                         <img src="img/gallery/gallery-1.jpeg" alt="" />
                         <div class="b-cart-text">
                             <p>ALP Brown Handbags</p>
@@ -95,8 +95,8 @@ function renderHeader() {
                 </div>
             </div>
             <div class="b-account">
-                <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
-                <i class="fa-solid fa-right-to-bracket login"></i>
+                <i class="fa-sharp fa-solid fa-user user" onclick="showPage('user-setting')" ></i>
+                <i class="fa-solid fa-right-to-bracket login" style="display: none"></i>
             </div>
         </div>
     </div>
@@ -159,6 +159,3 @@ function renderFooter() {
 }
 renderHeader();
 renderFooter();
-function showPage(page) {
-    window.location.href = `${page}.html`;
-}

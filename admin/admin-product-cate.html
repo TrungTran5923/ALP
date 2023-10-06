@@ -25,62 +25,26 @@
                     <div id="dashboard"></div>
                 </div>
                 <div class="s_col col-xl-10 col-lg-10 col-md-10 col-sm-10">
-                    <div class="s_right" data-tab="2">
+                    <div class="s_right">
                         <div class="c-opening">
-                            <h1>PRODUCT LIST</h1>
+                            <h1>PRODUCT CATEGORY</h1>
                             <div class="s_frame" id="s_login"></div>
                         </div>
                         <div class="s_frame">
-                            <div class="s_select">
-                                <label for="">Choose Cate</label>
-                                <select name="chooseCate" id="chooseCate"></select>
-                            </div>
-                            <div class="s_select">
-                                <label for="">Choose Material</label>
-                                <select name="chooseMaterial" id="chooseMaterial"></select>
+                            <div class="c-input">
+                                <input required="" type="text" class="c_input" name="cate" />
+                                <span class="c_highlight"></span>
+                                <span class="c_bar"></span>
+                                <label>Category name</label>
                             </div>
                             <div class="c-input">
-                                <input required="" type="text" class="c_input" name="title" />
+                                <input required="" type="text" class="c_input" name="icon" />
                                 <span class="c_highlight"></span>
                                 <span class="c_bar"></span>
-                                <label>Product Name</label>
-                            </div>
-                            <div class="c-input">
-                                <input required="" type="text" class="c_input" name="des" />
-                                <span class="c_highlight"></span>
-                                <span class="c_bar"></span>
-                                <label>Description</label>
-                            </div>
-                            <div class="c-input">
-                                <input required="" type="text" class="c_input" name="market" />
-                                <span class="c_highlight"></span>
-                                <span class="c_bar"></span>
-                                <label>Price Market</label>
-                            </div>
-                            <div class="c-input">
-                                <input required="" type="text" class="c_input" name="discount" />
-                                <span class="c_highlight"></span>
-                                <span class="c_bar"></span>
-                                <label>Price Discount</label>
-                            </div>
-                            <!-- <div class="c-input">
-                                <input required="" type="text" class="c_input" />
-                                <span class="c_highlight"></span>
-                                <span class="c_bar"></span>
-                                <label>ADDITIONAL</label>
-                            </div> -->
-                            <div class="c-input-1">
-                                <div class="c_frame">
-                                    <input required="" type="file" class="c_input" name="img" />
-                                    <span class="c_highlight"></span>
-                                    <span class="c_bar"></span>
-                                </div>
-                                <div class="c_thumb">
-                                    <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="img" />
-                                </div>
+                                <label>Enter Icon</label>
                             </div>
                         </div>
-                        <button class="c-btn-1">
+                        <button class="c-btn-1" id="btn-1">
                             <span class="c_btn-1">SAVE</span>
                             <span class="c_btn-2">SAVE</span>
                         </button>
@@ -94,11 +58,8 @@
                                 <thead>
                                     <tr>
                                         <th>STT</th>
-                                        <th>Image</th>
+                                        <th>Icon</th>
                                         <th>Item</th>
-                                        <th>Category</th>
-                                        <th>Material</th>
-                                        <th>Price Discount</th>
                                         <th>Fix</th>
                                         <th>Delete</th>
                                     </tr>
@@ -106,17 +67,13 @@
                                 <tbody>
                                     <!-- <tr>
                                         <td>1</td>
-
                                         <td>
                                             <img
                                                 src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg"
                                                 alt="img"
                                             />
                                         </td>
-                                        <td>ewfwefwefwe</td>
                                         <td>Chair</td>
-                                        <td>Wood</td>
-                                        <td>23</td>
                                         <td>Fix</td>
                                         <td>Delete</td>
                                     </tr> -->
@@ -129,6 +86,6 @@
         </div>
         <!-- script -->
         <script src="../js/admin-js/admin-base.js"></script>
-        <script src="../js/admin-js/admin-product.js"></script>
+        <script src="../js/admin-js/product-cate.js"></script>
     </body>
 </html>

@@ -1,0 +1,15 @@
+.s-body {
+    height: 500px;
+    .b-form {
+        .b-form-detail {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            input {
+                border: 1px solid $color-black;
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
