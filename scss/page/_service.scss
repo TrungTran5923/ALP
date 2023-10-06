@@ -1,0 +1,21 @@
+.s-body {
+    .s-body-content {
+        text-align: left;
+        .container {
+            .row {
+                margin-top: 30px;
+                margin-bottom: 80px;
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+                ul {
+                    list-style: disc;
+                    li {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

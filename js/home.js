@@ -65,7 +65,7 @@ let second = document.querySelector(".second");
 
 setInterval(() => {
     let now = new Date();
-    let to = new Date(2023, 10, 7, 0, 0, 0);
+    let to = new Date(2023, 9, 8, 0, 0, 0);
     let timeRemain = to.getTime() - now.getTime();
     day.innerHTML = Math.floor(timeRemain / 86400000);
     hour.innerHTML = Math.floor((timeRemain % 86400000) / 3600000);

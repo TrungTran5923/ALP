@@ -25,11 +25,29 @@ function renderHeader() {
                 <i class="fa-regular fa-magnifying-glass"></i>
             </div>
             <div class="b-cart" href="cart.html">
-                <i class="fa-sharp fa-solid fa-cart-shopping" ></i>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                 <div class="b-cart-amount"><span>1</span></div>
+                <div class="b-cart-hover">
+                    <p class="note" style="display: none">Your cart is empty</p>
+                    <div class="b-cart-content">
+                        <img src="img/gallery/gallery-1.jpeg" alt="" />
+                        <div class="b-cart-text">
+                            <p>ALP Brown Handbags</p>
+                            <p class="price">$ <span>800</span></p>
+                        </div>
+                    </div>
+                    <div class="b-cart-content">
+                        <img src="img/gallery/gallery-1.jpeg" alt="" />
+                        <div class="b-cart-text">
+                            <p>ALP Brown Handbags</p>
+                            <p class="price">$ <span>800</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="b-account">
-                <i class="fa-sharp fa-solid fa-user"></i>
+                <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
+                <i class="fa-solid fa-right-to-bracket login"></i>
             </div>
         </div>
     </div>
@@ -43,24 +61,42 @@ function renderHeader() {
                 <li>
                     <a href="shop.html">SHOP</a>
                     <ul class="b-submenu">
-                        <li><a href="">BIRKIN</a></li>
-                        <li><a href="">HANDBAG</a></li>
-                        <li><a href="">PURSE</a></li>
-                        <li><a href="">ACCESSORIES</a></li>
+                        <li><a href="shop.html">BIRKIN</a></li>
+                        <li><a href="shop.html">HANDBAG</a></li>
+                        <li><a href="shop.html">PURSE</a></li>
+                        <li><a href="shop.html">ACCESSORIES</a></li>
                     </ul>
                 </li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">BLOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <div class="b-function">
-            <div class="b-cart" >
-                <i class="fa-sharp fa-solid fa-cart-shopping" href="cart.html" ></i>
+            <div class="b-cart">
+                <i class="fa-sharp fa-solid fa-cart-shopping" href="cart.html"></i>
                 <div class="b-cart-amount"><span>1</span></div>
+                <div class="b-cart-hover">
+                    <p class="note" style="display: none">Your cart is empty</p>
+                    <div class="b-cart-content">
+                        <img src="img/gallery/gallery-1.jpeg" alt="" />
+                        <div class="b-cart-text">
+                            <p>ALP Brown Handbags</p>
+                            <p class="price">$ <span>800</span></p>
+                        </div>
+                    </div>
+                    <div class="b-cart-content">
+                        <img src="img/gallery/gallery-1.jpeg" alt="" />
+                        <div class="b-cart-text">
+                            <p>ALP Brown Handbags</p>
+                            <p class="price">$ <span>800</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="b-account">
-                <i class="fa-sharp fa-solid fa-user"></i>
+                <i class="fa-sharp fa-solid fa-user user" style="display: none"></i>
+                <i class="fa-solid fa-right-to-bracket login"></i>
             </div>
         </div>
     </div>
@@ -93,11 +129,11 @@ function renderFooter() {
         </div>
         <div class="s_mid">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="s_right">

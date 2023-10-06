@@ -3,7 +3,7 @@
     padding: 10px;
     transition: 0.5s;
     width: 100%;
-    z-index: 5;
+    z-index: 6;
     .container {
         .b-topheader {
             @include flexBox(center, between);
@@ -49,6 +49,13 @@
                 }
                 .b-cart {
                     position: relative;
+                    z-index: 6;
+                    &:hover {
+                        .b-cart-hover {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                     i {
                         color: $color-black;
                         font-size: $fs-20;
@@ -67,6 +74,45 @@
                         @include flexBox(center, center);
                         span {
                             font-size: $fs-12;
+                        }
+                    }
+                    .b-cart-hover {
+                        @include posAbsolute(tr, 30px, 0px);
+                        width: 280px;
+                        padding: 10px 20px;
+                        color: $color-black;
+                        background-color: $color-white;
+                        box-shadow: $primary-color-50 0px 3px 8px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.5s;
+                        z-index: 6;
+                        .note {
+                            text-align: center;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                        .b-cart-content {
+                            @include flexBox(center, between);
+
+                            padding: 10px;
+                            border-bottom: 1px solid $color-black-50;
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            img {
+                                width: 80px;
+                            }
+                            .b-cart-text {
+                                margin-left: 10px;
+                                p {
+                                    margin: 0;
+                                }
+                                .price {
+                                    color: $primary-color;
+                                }
+                            }
                         }
                     }
                 }
@@ -96,6 +142,7 @@
             }
             .b-menu {
                 transform: translateX(400px);
+                z-index: 6;
                 > ul {
                     width: 500px;
                     margin: 0 auto;
@@ -117,7 +164,7 @@
                                 opacity: 1;
                                 visibility: visible;
                                 @include posAbsolute(tl, 30px, -20px);
-                                z-index: 5;
+                                z-index: 6;
                             }
                         }
                         &::before {
@@ -151,6 +198,13 @@
                 @include flexBox(center, between);
                 .b-cart {
                     position: relative;
+                    z-index: 6;
+                    &:hover {
+                        .b-cart-hover {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                     i {
                         color: $color-black;
                         font-size: $fs-20;
@@ -169,6 +223,44 @@
                         @include flexBox(center, center);
                         span {
                             font-size: $fs-12;
+                        }
+                    }
+                    .b-cart-hover {
+                        @include posAbsolute(tr, 30px, 0px);
+                        width: 280px;
+                        padding: 10px 20px;
+                        color: $color-black;
+                        background-color: $color-white;
+                        box-shadow: $primary-color-50 0px 3px 8px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.5s;
+                        .note {
+                            text-align: center;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                        .b-cart-content {
+                            @include flexBox(center, between);
+                            z-index: 6;
+                            padding: 10px;
+                            border-bottom: 1px solid $color-black-50;
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            img {
+                                width: 80px;
+                            }
+                            .b-cart-text {
+                                margin-left: 10px;
+                                p {
+                                    margin: 0;
+                                }
+                                .price {
+                                    color: $primary-color;
+                                }
+                            }
                         }
                     }
                 }
