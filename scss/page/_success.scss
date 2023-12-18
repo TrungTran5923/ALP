@@ -35,6 +35,7 @@
                         transform: translateX(50px);
                     }
                     .b-box {
+                        width: 100%;
                         .b-box-table {
                             width: 80%;
                             margin: 0 auto;
@@ -69,6 +70,49 @@
                                         border-bottom: none;
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        .container {
+            .b-body-bot {
+                .b-order-content {
+                    .b-order-box {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            .b-body-bot {
+                .b-order-content {
+                    .b-order-box {
+                        width: 90%;
+                        .b-box {
+                            .b-box-table {
+                                font-size: $fs-12;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        .container {
+            .b-body-bot {
+                .b-order-content {
+                    .b-order-box {
+                        width: 90%;
+                        .b-box {
+                            .b-box-table {
+                                font-size: 8px;
                             }
                         }
                     }

@@ -3,6 +3,7 @@ const API_LINK = `http://localhost:3000`;
 const header = document.querySelector(".s-header");
 const footer = document.querySelector(".s-footer");
 console.log(header);
+// Hiển thị Header fixed
 window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
         header.classList.add("active");
@@ -59,7 +60,7 @@ function renderHeader() {
             <ul>
                 <li><a href="index.html">TRANG CHỦ</a></li>
                 <li>
-                    <a href="shop.html">CỬA HÀNG</a>
+                    <a href="shop.html">CỬA HÀNG <i class="fa-sharp fa-light fa-angle-down"></i></a>
                     <ul class="b-submenu">
                         <li><a href="shop.html">TÚI BIRKIN</a></li>
                         <li><a href="shop.html">TÚI CẦM TAY</a></li>
@@ -177,3 +178,38 @@ console.log(menu);
 btnMenu.addEventListener("click", function () {
     menu.classList.toggle("active");
 });
+
+// Nút quay về đầu trang
+const scrollBtn = document.querySelector(".c-scroll-btn");
+scrollBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.body.scrollIntoView({
+        behavior: "smooth",
+    });
+});
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        scrollBtn.classList.add("active");
+    } else {
+        scrollBtn.classList.remove("active");
+    }
+});
+
+// Hàm chuyển chữ số thành tiền
+function convertMoney(num, separator) {
+    separator = separator === undefined ? "." : separator;
+    num = String(num).replace(/[^0-9]/g, "");
+    if (!isNaN(num)) {
+        var array = num.toString().split("");
+        var index = -3;
+        while (array.length + index > 0) {
+            array.splice(index, 0, separator);
+            index -= 4;
+        }
+        return array.join("");
+    }
+}
+// Hàm chuyển tiền thành chữ số
+function convertNumber(str) {
+    return str.replace(/[^0-9]/g, "");
+}

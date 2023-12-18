@@ -155,6 +155,10 @@
                         &:hover {
                             > a {
                                 color: $primary-color;
+                                i {
+                                    color: $primary-color;
+                                    transform: rotate(180deg);
+                                }
                             }
                             &::before {
                                 width: 100%;

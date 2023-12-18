@@ -1,6 +1,5 @@
 @mixin posAbsolute($direction, $y, $x) {
     position: absolute;
-
     @if ($direction == "tl") {
         top: $y;
         left: $x;
@@ -12,6 +11,10 @@
     @if ($direction == "bl") {
         bottom: $y;
         left: $x;
+    }
+    @if ($direction == "br") {
+        bottom: $y;
+        right: $x;
     }
     @if ($direction == "centerX") {
         top: $y;

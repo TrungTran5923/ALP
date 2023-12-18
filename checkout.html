@@ -27,10 +27,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 b-bill-detail">
-                        <h4>Billing Details</h4>
+                        <h4>THÔNG TIN KHÁCH HÀNG</h4>
                         <form class="b-form-bill" action="success.html">
                             <div class="b-form-detail">
-                                <p>Fullname:</p>
+                                <p>Họ & Tên:</p>
                                 <input name="fullname" type="text" />
                             </div>
                             <div class="b-form-detail">
@@ -38,26 +38,26 @@
                                 <input name="email" type="email" />
                             </div>
                             <div class="b-form-detail">
-                                <p>Phone:</p>
+                                <p>Số điện thoại:</p>
                                 <input name="phone" type="number" />
                             </div>
                             <div class="b-form-detail">
-                                <p>Address:</p>
+                                <p>Địa chỉ:</p>
                                 <input name="address" type="number" />
                             </div>
                             <div class="b-form-detail">
-                                <p>Order Note (Optinal):</p>
+                                <p>Ghi chú (Tùy chọn):</p>
                                 <textarea name="" id=""></textarea>
                             </div>
-                            <button class="c-btn1" onclick="showPage('success')"><span>CHECKOUT</span></button>
+                            <button class="c-btn1" onclick="showPage('success')"><span>THANH TOÁN</span></button>
                         </form>
                     </div>
                     <div class="col-lg-4 b-bill-order">
-                        <p class="title">Your Order</p>
+                        <p class="title">Đơn hàng của bạn</p>
                         <div class="b-ordertop">
                             <div class="b-order-content">
-                                <p>PRODUCT</p>
-                                <p>SUBTOTAL</p>
+                                <p>SẢN PHẨM</p>
+                                <p>TẠM TÍNH</p>
                             </div>
                         </div>
                         <div class="b-orderbody">
@@ -65,30 +65,31 @@
                                 <p>
                                     ALP Handbag <span>x <span>2</span></span>
                                 </p>
-                                <p class="price">$ <span>1600</span></p>
+                                <p class="price"><span>1.600.000</span>đ</p>
                             </div>
                         </div>
                         <div class="b-oderbot">
                             <div class="b-order-content">
-                                <p class="total">Subtotal</p>
-                                <p class="price">$ <span>1600</span></p>
+                                <p class="total">Tạm tính</p>
+                                <p class="price"><span>1.600.000</span>đ</p>
                             </div>
                             <div class="b-order-content">
                                 <p class="total">Shipping</p>
                                 <div class="ship-option">
-                                    <div class="checkbox"><input type="checkbox" /> Pickup at Store</div>
-                                    <div class="checkbox"><input type="checkbox" /> Shipping: $10.00</div>
+                                    <div class="checkbox"><input type="checkbox" /> Nhận tại cửa hàng</div>
+                                    <div class="checkbox"><input type="checkbox" /> Giao hàng: 20.000đ</div>
                                 </div>
                             </div>
                             <div class="b-order-content">
-                                <p class="total">Total</p>
-                                <p class="price">$ <span>1600</span></p>
+                                <p class="total">Tổng</p>
+                                <p class="price"><span>1.600.000</span>đ</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="c-scroll-btn"><i class="fa-sharp fa-regular fa-angles-up"></i></div>
         <div class="s-footer"></div>
         <script src="js/base.js"></script>
         <script src="js/checkout.js"></script>
