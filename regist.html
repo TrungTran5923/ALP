@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
+        <title>Regist</title>
         <link rel="shortcut icon" href="img/logo/ALP - shortcut icon.png" type="image/svg+xml" />
         <!-- nhúng các thư viện ngoài vào đây -->
         <!-- bs5 -->
@@ -25,27 +25,39 @@
         <div class="s-header"></div>
         <div class="s-body">
             <div class="container">
-                <h2>ĐĂNG NHẬP</h2>
-                <form class="b-form" action="home-login.html">
+                <h2>ĐĂNG KÝ</h2>
+                <form class="b-form">
                     <div class="b-form-detail">
-                        <p>Email:</p>
-                        <input name="email" type="email" />
+                        <p>Tên đăng nhập:</p>
+                        <input name="username" class="form-input" type="text" placeholder="Tên đăng nhập" />
+                        <div class="error"></div>
                     </div>
                     <div class="b-form-detail">
-                        <p>Mật khẩu:</p>
-                        <input name="pass" type="password" />
+                        <p>Email:</p>
+                        <input name="email" class="form-input" type="email" placeholder="Email" />
+                        <div class="error"></div>
+                    </div>
+                    <div class="b-form-detail">
+                        <p>Nhập Mật khẩu:</p>
+                        <input name="password" class="form-input" type="password" placeholder="Nhập mật khẩu" />
+                        <div class="error"></div>
+                    </div>
+                    <div class="b-form-detail">
+                        <p>Nhập lại Mật khẩu:</p>
+                        <input name="repassword" class="form-input" type="password" placeholder="Nhập lại mật khẩu" />
+                        <div class="error"></div>
                     </div>
                     <div class="b-form-detail">
                         <p>
-                            Bạn chưa có tài khoản: <span><a href="regist.html">Đăng ký ngay!</a></span>
+                            Bạn đã có tài khoản: <span><a href="login.html">Đăng nhập ngay!</a></span>
                         </p>
                     </div>
-                    <button class="c-btn1" type="submit"><span>Đăng nhập</span></button>
+                    <button class="c-btn1" type="submit"><span>Đăng ký</span></button>
                 </form>
             </div>
         </div>
         <div class="s-footer"></div>
         <script src="js/base.js"></script>
-        <script src="js/login.js"></script>
+        <script src="js/regist.js"></script>
     </body>
 </html>

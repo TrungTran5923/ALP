@@ -19,7 +19,7 @@
         <!-- icon -->
         <link rel="stylesheet" href="sub/css/all.min.css" />
         <!-- nhúng các css tự viết -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="scss/style.css" />
     </head>
     <body>
         <div class="s-header"></div>
@@ -36,17 +36,17 @@
                     </div>
                     <div class="col-lg-5 b-product-info">
                         <h2 class="b-product-name">Blue ALP Handbag</h2>
-                        <p class="b-product-price"><span class="b-product-disprice">$999</span> $<span>800</span></p>
+                        <p class="b-product-price"><span class="b-product-disprice">800.000đ</span><span>799.000</span>đ</p>
                         <p class="b-product-reason">
-                            We're thrilled to launch our new handbag collection to keep you on-trend and cater to your evolving style preferences. Fashion is dynamic, and our commitment to innovation
-                            drives us to continually create fresh, trendy, and timeless designs. With each new collection, we aim to offer a diverse range of options, allowing you to express your
-                            unique style and stay ahead of fashion trends.
+                            Chúng tôi rất vui mừng được ra mắt bộ sưu tập túi xách mới để giúp bạn bắt kịp xu hướng và đáp ứng sở thích về phong cách ngày càng phát triển của bạn. Thời trang luôn năng
+                            động và cam kết đổi mới của chúng tôi thúc đẩy chúng tôi liên tục tạo ra những thiết kế mới mẻ, hợp thời trang và vượt thời gian. Với mỗi bộ sưu tập mới, chúng tôi mong
+                            muốn cung cấp nhiều lựa chọn đa dạng, cho phép bạn thể hiện phong cách của mình. phong cách độc đáo và luôn đi trước xu hướng thời trang.
                         </p>
                         <div class="b-info-detail color">
-                            <p>Color: <span>Blue</span></p>
+                            <p>Màu: <span>Xanh</span></p>
                         </div>
                         <div class="b-info-detail material">
-                            <p>Material: <span>Cactus</span></p>
+                            <p>Nguyên liệu: <span>Xương rồng</span></p>
                         </div>
                         <div class="b-addtocart">
                             <div class="amount">
@@ -57,41 +57,60 @@
                                     <i id="minus" class="fa-solid fa-angle-down minus"></i>
                                 </div>
                             </div>
-                            <button class="c-btn1"><span>ADD TO CART</span></button>
+                            <button class="c-btn1"><span>THÊM VÀO GIỎ HÀNG</span></button>
                         </div>
                     </div>
                 </div>
                 <div class="b-product-descrip">
                     <div class="b-tab">
-                        <p class="active" data-tab="descrip">DESCRIPTION</p>
-                        <p data-tab="info">ADDITONAL INFOMATION</p>
+                        <p class="active" data-tab="descrip">MÔ TẢ</p>
+                        <p data-tab="info">THÔNG TIN THÊM</p>
+                        <p data-tab="review">ĐÁNH GIÁ</p>
                     </div>
                     <div class="b-info">
                         <div class="section">
                             <p class="active" data-tab="descrip">
-                                Dimensions: 24 x 20 x 7.5 cm. <br />
-                                Weight: 386 g. <br />
-                                Adjustable straps in two lengths: 106 cm and 138 cm. <br />
-                                Interior pocket. <br />
-                                Zippered outer pocket.
+                                Kích thước: 24 x 20 x 7.5 cm. <br />
+                                Trọng lượng: 386 g. <br />
+                                Dây kéo: 106 cm and 138 cm. <br />
+                                Có ngăn túi trong. <br />
+                                Ngăn khóa có zip.
                             </p>
                             <p data-tab="info">
-                                In addition to their stunning aesthetic appeal, our cactus-based handbags also come with an eco-friendly twist. These bags are not only fashionable but also
-                                sustainable. Cactus leather, also known as cactus vegan leather, is an eco-conscious alternative to traditional leather made from animal hides. Harvesting cactus for
-                                leather production is a highly sustainable process, as cactus plants require minimal water and land to grow, making them an environmentally friendly choice.
-                                Furthermore, cactus leather is cruelty-free and free from harmful chemicals often associated with traditional leather tanning processes. It offers the same level of
-                                durability and quality that you'd expect from high-quality leather, ensuring your handbag will stand the test of time. By choosing a handbag made of cactus leather,
-                                you're not only making a fashion statement but also contributing to a more sustainable and ethical fashion industry. It's a win-win for both your style and the planet
+                                Ngoài sự hấp dẫn về mặt thẩm mỹ tuyệt đẹp, những chiếc túi xách làm từ xương rồng của chúng tôi còn có nét đặc trưng thân thiện với môi trường. Những chiếc túi này
+                                không chỉ thời trang mà còn bền vững. Da xương rồng, còn được gọi là da xương rồng thuần chay, là một sự thay thế có ý thức sinh thái cho da truyền thống được làm từ da
+                                động vật. Thu hoạch xương rồng để Sản xuất da là một quá trình có tính bền vững cao, vì cây xương rồng cần ít nước và đất để phát triển, khiến chúng trở thành một lựa
+                                chọn thân thiện với môi trường. Hơn nữa, da xương rồng không chứa các hóa chất độc hại thường liên quan đến quy trình thuộc da truyền thống. Nó cung cấp cùng một mức độ
+                                độ bền và chất lượng mà bạn mong đợi từ da chất lượng cao, đảm bảo túi xách của bạn sẽ đứng vững trước thử thách của thời gian. Bằng cách chọn một chiếc túi xách làm
+                                bằng da xương rồng, bạn không chỉ đưa ra tuyên bố về thời trang mà còn đóng góp cho một ngành thời trang bền vững và có đạo đức hơn. Đó là đôi bên cùng có lợi cho cả
+                                phong cách của bạn và hành tinh
                             </p>
+                            <div class="review">
+                                <div class="review-content">
+                                    <h5>Đánh giá của bạn</h5>
+                                    <div class="review-icon">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <h5>Ý kiến của bạn</h5>
+                                    <textarea></textarea>
+                                </div>
+                                <button id="review" class="c-btn1 more"><span>Đánh giá</span></button>
+                            </div>
                         </div>
                     </div>
                     <div class="btn">
-                        <button id="more" class="c-btn1 more"><span>SHOW MORE</span></button>
-                        <button id="less" class="c-btn1 less" style="display: none"><span>SHOW LESS</span></button>
+                        <button id="more" class="c-btn1 more"><span>Xem Thêm</span></button>
+                        <button id="less" class="c-btn1 less"><span>Thu Gọn</span></button>
                     </div>
                 </div>
                 <div class="b-suggest">
-                    <h3 class="b-suggest-title">YOU MAY ALSO LIKE</h3>
+                    <h3 class="b-suggest-title">SẢN PHẨM TƯƠNG TỰ</h3>
                     <div class="b-suggest-list">
                         <div class="c-card-product">
                             <div class="c_card-img">
@@ -102,8 +121,8 @@
                             <div class="c_card-content">
                                 <h4>Light Blue Handbag</h4>
                                 <div class="c_price">
-                                    <p class="c_discount-price">$<span>89.99</span></p>
-                                    <p class="c_real-price">$<span>79.99</span></p>
+                                    <p class="c_discount-price"><span>800.000</span>đ</p>
+                                    <p class="c_real-price"><span>799.000</span>đ</p>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +135,8 @@
                             <div class="c_card-content">
                                 <h4>Purple Pastel Handbag</h4>
                                 <div class="c_price">
-                                    <p class="c_discount-price">$<span>89.99</span></p>
-                                    <p class="c_real-price">$<span>79.99</span></p>
+                                    <p class="c_discount-price"><span>800.000</span>đ</p>
+                                    <p class="c_real-price"><span>799.000</span>đ</p>
                                 </div>
                             </div>
                         </div>
@@ -130,8 +149,8 @@
                             <div class="c_card-content">
                                 <h4>Blue Purse</h4>
                                 <div class="c_price">
-                                    <p class="c_discount-price">$<span>89.99</span></p>
-                                    <p class="c_real-price">$<span>79.99</span></p>
+                                    <p class="c_discount-price"><span>800.000</span>đ</p>
+                                    <p class="c_real-price"><span>799.000</span>đ</p>
                                 </div>
                             </div>
                         </div>
@@ -144,8 +163,8 @@
                             <div class="c_card-content">
                                 <h4>Black Purse</h4>
                                 <div class="c_price">
-                                    <p class="c_discount-price">$<span>89.99</span></p>
-                                    <p class="c_real-price">$<span>79.99</span></p>
+                                    <p class="c_discount-price"><span>800.000</span>đ</p>
+                                    <p class="c_real-price"><span>799.000</span>đ</p>
                                 </div>
                             </div>
                         </div>

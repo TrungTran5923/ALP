@@ -39,6 +39,7 @@ amountBtn.forEach((element) => {
 });
 
 // change tab
+const showDiv = document.querySelector(".btn ");
 const tabBtn = document.querySelectorAll(".b-tab p");
 const tabContent = document.querySelectorAll(".b-info p");
 tabBtn.forEach((tab) => {
@@ -53,14 +54,31 @@ tabBtn.forEach((tab) => {
             } else {
                 content.classList.remove("active");
             }
+            if (tab.getAttribute("data-tab") == "review") {
+                info.querySelector(".review").classList.add("active");
+                info.classList.add("active");
+                showDiv.style.display = "none";
+            } else {
+                showDiv.style.display = "block";
+                info.classList.remove("active");
+            }
         });
     });
 });
 
-//show btn
-const showBtn = document.querySelectorAll(".btn button");
-const info = document.querySelector(".b-info section");
+// if (!info.querySelector(".review active")) {
+//     info.classList.add("active");
+//     showDiv.style.display = "none";
+// } else {
+//     info.classList.remove("active");
+//     showDiv.style.display = "block";
+// }
 
+//show btn
+
+const showBtn = document.querySelectorAll(".btn button");
+let info = document.querySelector(".b-info .section");
+console.log(showBtn);
 showBtn.forEach((element, index) => {
     element.addEventListener("click", function () {
         if (element.getAttribute("id") == "more") {
@@ -69,8 +87,8 @@ showBtn.forEach((element, index) => {
             showBtn[index].nextElementSibling.style.display = "block";
         } else {
             info.classList.remove("active");
-            showBtn[index].style.display = "none";
-            showBtn[index].nextSibling.style.display = "block";
+            showBtn[1].style.display = "none";
+            showBtn[0].style.display = "block";
         }
     });
 });

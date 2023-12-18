@@ -1,11 +1,12 @@
 .s-headbanner {
     color: $color-black;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    height: 500px;
     .b-slide {
         position: relative;
-        height: 700px;
-
+        height: 500px;
+        overflow: hidden;
         .b-banner-slide {
             @include posAbsolute(center, 50%, 50%);
             width: 100%;
@@ -19,12 +20,13 @@
                 }
             }
             .b-content {
-                @include posAbsolute(centerX, 28%, 50%);
+                @include posAbsolute(centerX, 40%, 50%);
                 width: 60%;
                 text-align: center;
                 h2 {
                     color: $color-white;
                     font-size: $fs-50;
+                    text-shadow: 2px 2px 5px $color-black-50;
                     animation: slideUp 1.5s linear;
                     span {
                         color: $secondary-color;
@@ -76,6 +78,22 @@
             }
             &:hover {
                 background-color: #717171;
+            }
+        }
+    }
+    @media (max-width: 658px) {
+        .b-slide {
+            .b-banner-slide {
+                .b-content {
+                    h2 {
+                        font-size: 32px;
+                    }
+                }
+            }
+            button {
+                span {
+                    font-size: $fs-20;
+                }
             }
         }
     }

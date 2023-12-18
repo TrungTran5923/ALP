@@ -57,7 +57,7 @@ tabBtn.forEach((tab) => {
     });
 });
 
-//  countdown
+//  countdown đếm ngày còn lại
 let day = document.querySelector(".day");
 let hour = document.querySelector(".hour");
 let minute = document.querySelector(".minute");
@@ -65,7 +65,7 @@ let second = document.querySelector(".second");
 
 setInterval(() => {
     let now = new Date();
-    let to = new Date(2023, 9, 8, 0, 0, 0);
+    let to = new Date(2023, 11, 20, 0, 0, 0);
     let timeRemain = to.getTime() - now.getTime();
     day.innerHTML = Math.floor(timeRemain / 86400000);
     hour.innerHTML = Math.floor((timeRemain % 86400000) / 3600000);

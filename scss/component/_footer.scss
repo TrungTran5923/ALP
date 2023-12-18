@@ -82,4 +82,67 @@
             }
         }
     }
+    @media (max-width: 990px) {
+        .s_top {
+            .s_mid {
+                ul {
+                    margin-left: 20px;
+                    li {
+                        a {
+                            font-size: $fs-16;
+                        }
+                    }
+                }
+            }
+            .s_right {
+                h4 {
+                    font-size: $fs-18;
+                }
+                p {
+                    font-size: $fs-16;
+                }
+                .s_email {
+                    input {
+                        background-color: $transparent;
+                        &::placeholder {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        height: 100%;
+        .s_top {
+            flex-wrap: wrap;
+            height: 550px;
+            .s_left {
+                width: 50%;
+            }
+            .s_mid {
+                width: 30%;
+            }
+            .s_right {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        height: 1100px;
+        .s_top {
+            height: 1000px;
+            text-align: center;
+            .s_left {
+                width: 100%;
+                .s_logo {
+                    transform: translateX(50%);
+                }
+            }
+            .s_mid {
+                width: 100%;
+            }
+        }
+    }
 }

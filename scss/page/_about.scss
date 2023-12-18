@@ -10,6 +10,7 @@
             color: $color-white;
             h2 {
                 color: $primary-color;
+                text-shadow: 2px 2px 5px $color-black-50;
             }
         }
         .s-banner-img {
@@ -31,11 +32,22 @@
         text-align: center;
         margin-top: 30px;
         margin-bottom: 50px;
+
         h2 {
             font-weight: $fw-600;
+            position: relative;
+            &::after {
+                content: "";
+                @include posAbsolute(bl, -5px, 0px);
+                background-color: $primary-color;
+                height: 2px;
+                width: 100px;
+            }
+            margin-bottom: 10px;
         }
         .b-list {
             @include flexBox(center);
+            flex-wrap: wrap;
             gap: 10px;
             .b-card {
                 width: calc(100% / 4 - 10px);

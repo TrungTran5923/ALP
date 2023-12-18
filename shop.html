@@ -19,7 +19,7 @@
         <!-- icon -->
         <link rel="stylesheet" href="sub/css/all.min.css" />
         <!-- nhúng các css tự viết -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="scss/style.css" />
     </head>
     <body>
         <div class="s-header"></div>
@@ -35,86 +35,85 @@
         <div class="s-body">
             <div class="container">
                 <div class="s-breadcrumb">
-                    <a href="/index.html">Home <i class="fa-regular fa-angle-right"></i> </a>
-                    <span> Shop</span>
+                    <a href="/index.html">Trang chủ <i class="fa-regular fa-angle-right"></i> </a>
+                    <span> Cửa hàng</span>
                 </div>
-                <h2 class="s-title">SHOP</h2>
+                <h2 class="s-title">CỬA HÀNG</h2>
                 <div class="s-body-content">
                     <div class="row">
                         <div class="left col-lg-3">
                             <div class="b-filter">
                                 <div class="b-filter-option cate">
-                                    <h5>CATEGORIES</h5>
+                                    <h5>DANH MỤC</h5>
                                     <ul>
-                                        <li>Birkin</li>
-                                        <li>Handbag</li>
-                                        <li>Purse</li>
-                                        <li>Accessories</li>
+                                        <li>Túi Birkin</li>
+                                        <li>Túi cầm tay</li>
+                                        <li>Ví</li>
+                                        <li>Phụ kiện</li>
                                     </ul>
                                 </div>
                                 <div class="b-filter-option price">
-                                    <h5>PRICE</h5>
+                                    <h5>GIÁ</h5>
                                     <ul>
-                                        <li>All</li>
-                                        <li>$0 - $100</li>
-                                        <li>$100 - $300</li>
-                                        <li>$300 - $500</li>
-                                        <li>$500 - $800</li>
-                                        <li>$800 - $1000</li>
-                                        <li>Over $1000</li>
+                                        <li>TẤT CẢ</li>
+                                        <li>0 - 500.000đ</li>
+                                        <li>500.000 - 700.000đ</li>
+                                        <li>700.000 - 800.000đ</li>
+                                        <li>800.000 - 1.000.000đ</li>
+                                        <li>Trên 1.000.000đ</li>
                                     </ul>
                                 </div>
                                 <div class="b-filter-option color">
-                                    <h5>COLOR</h5>
+                                    <h5>MÀU SẮC</h5>
                                     <ul>
                                         <li>
                                             <div style="background-color: red"></div>
-                                            Red
+                                            Đỏ
                                         </li>
                                         <li>
                                             <div style="background-color: pink"></div>
-                                            Pink
+                                            Hồng
                                         </li>
                                         <li>
                                             <div style="background-color: rgb(0, 183, 255)"></div>
-                                            Blue
+                                            Xanh Dương
                                         </li>
                                         <li>
                                             <div style="background-color: rgb(23, 128, 0)"></div>
-                                            Green
+                                            Xanh Lá
                                         </li>
                                         <li>
                                             <div style="background-color: rgb(0, 0, 0)"></div>
-                                            Black
+                                            Đen
                                         </li>
                                         <li>
                                             <div style="background-color: rgb(97, 97, 97)"></div>
-                                            Grey
+                                            Xám
                                         </li>
                                         <li>
                                             <div style="background-color: rgb(57, 47, 0)"></div>
-                                            Brown
+                                            Nâu
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="b-filter-option material">
-                                    <h5>MATERIALS</h5>
+                                    <h5>NGUYÊN LIỆU</h5>
                                     <ul>
                                         <li>
                                             <img src="img/material/mate-cactus.webp" alt="" />
-                                            Cactus
+                                            Xương Rồng
                                         </li>
                                         <li>
                                             <img src="img/material/mate-fruit.jpeg" alt="" />
-                                            Fruit Peel
+                                            Vỏ Trái Cây
                                         </li>
                                         <li>
                                             <img src="img/material/mate-lotus.avif" alt="" />
-                                            Lotus
+                                            Hoa Sen
                                         </li>
                                         <li>
                                             <img src="img/material/mate-mush.webp" alt="" />
-                                            Mushroom
+                                            Nấm
                                         </li>
                                     </ul>
                                 </div>
@@ -123,9 +122,9 @@
                         <div class="right col-lg-9">
                             <div class="b-filter-text">
                                 <h6>
-                                    FILTER <span><i class="fa-regular fa-angles-left"></i></span>
+                                    BỘ LỌC <span><i class="fa-regular fa-angles-left"></i></span>
                                 </h6>
-                                <p>View <span>16</span> per page</p>
+                                <p>Hiển thị <span>16</span> sản phẩm</p>
                             </div>
                             <div class="b-list-card">
                                 <div class="c-card-product" onclick="showPage('detail')">
@@ -137,8 +136,8 @@
                                     <div class="c_card-content">
                                         <h6>Grey Neutral Handbag</h6>
                                         <div class="c_price">
-                                            <p class="c_discount-price">$<span>89.99</span></p>
-                                            <p class="c_real-price">$<span>79.99</span></p>
+                                            <p class="c_discount-price"><span>800.000</span>đ</p>
+                                            <p class="c_real-price"><span>799.000</span>đ</p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,8 +150,8 @@
                                     <div class="c_card-content" onclick="showPage('detail')">
                                         <h6>Grey Neutral Handbag</h6>
                                         <div class="c_price">
-                                            <p class="c_discount-price">$<span>89.99</span></p>
-                                            <p class="c_real-price">$<span>79.99</span></p>
+                                            <p class="c_discount-price"><span>800.000</span>đ</p>
+                                            <p class="c_real-price"><span>799.000</span>đ</p>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +164,8 @@
                                     <div class="c_card-content">
                                         <h6>Grey Neutral Handbag</h6>
                                         <div class="c_price">
-                                            <p class="c_discount-price">$<span>89.99</span></p>
-                                            <p class="c_real-price">$<span>79.99</span></p>
+                                            <p class="c_discount-price"><span>800.000</span>đ</p>
+                                            <p class="c_real-price"><span>799.000</span>đ</p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,8 +178,8 @@
                                     <div class="c_card-content">
                                         <h6>Grey Neutral Handbag</h6>
                                         <div class="c_price">
-                                            <p class="c_discount-price">$<span>89.99</span></p>
-                                            <p class="c_real-price">$<span>79.99</span></p>
+                                            <p class="c_discount-price"><span>800.000</span>đ</p>
+                                            <p class="c_real-price"><span>799.000</span>đ</p>
                                         </div>
                                     </div>
                                 </div>
@@ -193,13 +192,13 @@
                                     <div class="c_card-content">
                                         <h6>Grey Neutral Handbag</h6>
                                         <div class="c_price">
-                                            <p class="c_discount-price">$<span>89.99</span></p>
-                                            <p class="c_real-price">$<span>79.99</span></p>
+                                            <p class="c_discount-price"><span>800.000</span>đ</p>
+                                            <p class="c_real-price"><span>799.000</span>đ</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="c-btn2 loadmore"><span>LOAD MORE</span></button>
+                            <button class="c-btn2 loadmore"><span>XEM THÊM</span></button>
                         </div>
                     </div>
                 </div>

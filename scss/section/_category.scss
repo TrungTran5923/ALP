@@ -2,6 +2,7 @@
     margin-top: 5px;
     .b-cate-card {
         position: relative;
+        overflow: hidden;
         .b-card-img {
             position: relative;
             overflow: hidden;
@@ -28,6 +29,21 @@
         h3 {
             @include posAbsolute(center, 50%, 50%);
             z-index: 3;
+            text-align: center;
+        }
+    }
+    @media (max-width: 992px) {
+        .b-cate-card {
+            height: 300px;
+            h3 {
+                font-size: $fs-22;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .b-cate-card {
+            margin-bottom: 10px;
+            height: 200px;
         }
     }
 }

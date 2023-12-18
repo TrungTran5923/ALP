@@ -32,4 +32,38 @@
         height: 100%;
         @include posAbsolute(tl, 0, 0);
     }
+    @media (max-width: 1091px) {
+        .s_sale-text {
+            p {
+                letter-spacing: 5px;
+            }
+            h2 {
+                font-size: $fs-22;
+                span {
+                    color: $primary-color;
+                    font-size: $fs-36;
+                }
+            }
+            button {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 659px) {
+        .s_sale-text {
+            h2 {
+                font-size: $fs-20;
+                span {
+                    color: $primary-color;
+                    font-size: $fs-22;
+                }
+            }
+        }
+    }
+    @media (max-width: 433px) {
+        h2 {
+            font-size: $fs-16;
+        }
+    }
 }

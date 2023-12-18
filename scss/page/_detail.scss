@@ -1,26 +1,29 @@
 .s-detail {
     color: $color-black;
-    padding-top: 50px;
+    padding-top: 20px;
 
     .b-product-detail {
         .b-subimg {
-            width: 200px;
-            height: 220px;
+            width: 120px;
             img {
                 margin-bottom: 10px;
                 filter: opacity(0.6);
+                transition: 0.5s;
+                &:hover {
+                    filter: opacity(0.8);
+                }
             }
         }
+
         .b-mainimg {
             width: 500px;
-            height: 759px;
             margin-right: 20px;
             background-image: url("/img/product/handbag/detail/blue-1.jpeg");
             background-size: cover;
-            // img {
-            //     height: 759px;
-            //     object-fit: cover;
-            // }
+            img {
+                width: 300px;
+                object-fit: cover;
+            }
             &:hover {
                 background-size: 175%;
             }
@@ -38,6 +41,7 @@
                     color: $color-black-40;
                     text-decoration: line-through;
                     font-size: $fs-20;
+                    margin-right: 20px;
                 }
             }
             .b-product-reason {
@@ -60,6 +64,9 @@
                         font-size: $fs-20;
                         color: $color-black-50;
                     }
+                }
+                button {
+                    width: 300px;
                 }
             }
         }
@@ -111,12 +118,30 @@
                         display: block;
                     }
                 }
+                .review {
+                    display: none;
+                    .review-content {
+                        margin-bottom: 10px;
+                        h5 {
+                            color: $primary-color;
+                        }
+                        textarea {
+                            width: 100%;
+                        }
+                    }
+                    &.active {
+                        display: block;
+                    }
+                }
             }
         }
     }
     .btn {
         margin-top: 30px;
         @include flexBox(center, center);
+        .less {
+            display: none;
+        }
     }
     .b-suggest {
         text-align: center;
@@ -128,6 +153,62 @@
         .b-suggest-list {
             @include flexBox(center);
             gap: 10px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .b-product-detail {
+            .b-subimg {
+                width: 100px;
+            }
+
+            .b-mainimg {
+                width: 300px;
+            }
+            .b-product-info {
+                width: 500px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .b-product-detail {
+            .b-subimg {
+                width: 80px;
+            }
+
+            .b-mainimg {
+                width: 250px;
+            }
+            .b-product-info {
+                width: 300px;
+                .b-product-name {
+                    font-size: $fs-28;
+                }
+                .b-product-reason {
+                    font-size: $fs-12;
+                }
+                .b-addtocart {
+                    button {
+                        font-size: $fs-12;
+                    }
+                }
+            }
+        }
+        .b-product-descrip {
+            width: 80%;
+        }
+    }
+    @media (max-width: 755px) {
+        .b-product-detail {
+            .b-subimg {
+                width: 80px;
+            }
+
+            .b-mainimg {
+                width: 200px;
+            }
+            .b-product-info {
+                width: 400px;
+            }
         }
     }
 }
