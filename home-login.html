@@ -24,6 +24,7 @@
     </head>
     <body>
         <div class="s-header"></div>
+        <!-- Banner của trang -->
         <div class="s-headbanner">
             <div class="b-slide">
                 <div class="b-banner-slide">
@@ -31,9 +32,9 @@
                         <img src="img/headbanner/hdbanner1.webp" alt="" />
                     </div>
                     <div class="b-content">
-                        <h2><span>New Collection</span> for Cozy Autumn</h2>
-                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                        <h2><span>Bộ Sưu Tập Mới</span> Mùa Cuối Năm</h2>
+                        <p>Bộ sưu tập mới nhất đã ra mắt. <a href="">Khám phá ngay!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>MUA NGAY</span></button>
                     </div>
                 </div>
                 <div class="b-banner-slide">
@@ -41,9 +42,9 @@
                         <img src="img/headbanner/hdbanner2.webp" alt="" />
                     </div>
                     <div class="b-content">
-                        <h2><span>New Collection</span> for Chill Summer</h2>
-                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                        <h2><span>Bộ Sưu Tập Mới</span> Mùa Cuối Năm</h2>
+                        <p>Bộ sưu tập mới nhất đã ra mắt. <a href="">Khám phá ngay!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>MUA NGAY</span></button>
                     </div>
                 </div>
                 <div class="b-banner-slide">
@@ -51,9 +52,9 @@
                         <img src="img/headbanner/hdbanner3.webp" alt="" />
                     </div>
                     <div class="b-content">
-                        <h2><span>New Collection</span> for Chill Summer</h2>
-                        <p>The Greatest Collection has released. <a href="">Check it now!</a></p>
-                        <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                        <h2><span>Bộ Sưu Tập Mới</span> Mùa Cuối Năm</h2>
+                        <p>Bộ sưu tập mới nhất đã ra mắt. <a href="">Khám phá ngay!</a></p>
+                        <button class="c-btn1" onclick="showPage('shop')"><span>MUA NGAY</span></button>
                     </div>
                 </div>
             </div>
@@ -63,38 +64,40 @@
                 <span class="dot" onclick="changeSlide(2)"></span>
             </div>
         </div>
+        <!-- Danh mục category -->
         <div class="s-category">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                    <div class="b-cate-card col-lg-3 col-md-3 col-sm-3 col-6" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-birkin.jpeg" alt="" /></div>
-                        <h3>Birkin</h3>
+                        <h3>Túi Birkin</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                    <div class="b-cate-card col-lg-3 col-md-3 col-sm-3 col-6" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-handbag.jpeg" alt="" /></div>
-                        <h3>Handbag</h3>
+                        <h3>Túi Cầm Tay</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                    <div class="b-cate-card col-lg-3 col-md-3 col-sm-3 col-6" onclick="showPage('shop')">
                         <div class="b-card-img">
                             <img src="img/category/cate-purse.jpeg" alt="" />
                         </div>
-                        <h3>Purse</h3>
+                        <h3>Ví</h3>
                     </div>
-                    <div class="b-cate-card col-lg-3" onclick="showPage('shop')">
+                    <div class="b-cate-card col-lg-3 col-md-3 col-sm-3 col-6" onclick="showPage('shop')">
                         <div class="b-card-img"><img src="img/category/cate-access.jpeg" alt="" /></div>
-                        <h3>Accessories</h3>
+                        <h3>Phụ Kiện</h3>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Sản phẩm mới -->
         <div class="s-newproduct">
             <div class="container">
-                <h2 class="s_new-title">NEW PRODUCTS</h2>
+                <h2 class="s_new-title">SẢN PHẨM MỚI</h2>
                 <div class="s_newproduct-type">
-                    <h5 class="active" id="birkin">Birkin</h5>
-                    <h5 id="handbag">Handbag</h5>
-                    <h5 id="purse">Purse</h5>
-                    <h5 id="access">Accessories</h5>
+                    <h5 class="active" id="birkin">Túi Birkin</h5>
+                    <h5 id="handbag">Túi Cầm Tay</h5>
+                    <h5 id="purse">Ví</h5>
+                    <h5 id="access">Phụ Kiện</h5>
                 </div>
                 <div class="s_newproduct-list active" data-id="birkin">
                     <div class="c-card-product" onclick="showPage('detail')">
@@ -106,12 +109,12 @@
                         <div class="c_card-content">
                             <h4>Pink Pastel Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>799</span></p>
-                                <p class="c_real-price">$<span>899</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-2.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -120,12 +123,12 @@
                         <div class="c_card-content">
                             <h4>Blue Pastel Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>750</span></p>
-                                <p class="c_real-price">$<span>790</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-3.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -134,12 +137,12 @@
                         <div class="c_card-content">
                             <h4>Grey Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>999</span></p>
-                                <p class="c_real-price">$<span>1200</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
-                    <div class="c-card-product">
+                    <div class="c-card-product" onclick="showPage('detail')">
                         <div class="c_card-img">
                             <img src="img/product/birkin/bk-4.jpeg" alt="" />
                             <div class="c_discount"><span>20%</span></div>
@@ -148,8 +151,8 @@
                         <div class="c_card-content">
                             <h4>Navy Birkin</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -164,8 +167,8 @@
                         <div class="c_card-content">
                             <h4>Grey Neutral Handbag</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -178,8 +181,8 @@
                         <div class="c_card-content">
                             <h4>Yellow Pastel Handbag</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -192,8 +195,8 @@
                         <div class="c_card-content">
                             <h4>Light Blue Handbag</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -206,8 +209,8 @@
                         <div class="c_card-content">
                             <h4>Purple Pastel Handbag</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -222,8 +225,8 @@
                         <div class="c_card-content">
                             <h4>Yellow Purse</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -236,8 +239,8 @@
                         <div class="c_card-content">
                             <h4>Blue Purse</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -250,8 +253,8 @@
                         <div class="c_card-content">
                             <h4>Black Purse</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -264,8 +267,8 @@
                         <div class="c_card-content">
                             <h4>Brown Purse</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -280,8 +283,8 @@
                         <div class="c_card-content">
                             <h4>Velvet Keychain</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -294,8 +297,8 @@
                         <div class="c_card-content">
                             <h4>Black Coin Pocket</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -308,8 +311,8 @@
                         <div class="c_card-content">
                             <h4>Red Keychain</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
@@ -322,50 +325,52 @@
                         <div class="c_card-content">
                             <h4>Orange Keychain</h4>
                             <div class="c_price">
-                                <p class="c_discount-price">$<span>89.99</span></p>
-                                <p class="c_real-price">$<span>79.99</span></p>
+                                <p class="c_discount-price"><span>800.000</span>đ</p>
+                                <p class="c_real-price"><span>799.000</span>đ</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Banner ưu đãi giảm giá -->
         <div class="s-sale">
             <div class="s_sale-text">
-                <p>All Products for Sale</p>
-                <h2>SALE END IN <span class="day">1</span> DAYS <span class="hour">1</span> HOURS <span class="minute">1</span> MINUTES <span class="second">1</span></h2>
-                <button class="c-btn1" onclick="showPage('shop')"><span>SHOP NOW</span></button>
+                <p>Giảm giá toàn bộ sản phẩm</p>
+                <h2>Giảm giá kết thúc <span class="day">1</span> NGÀY <span class="hour">1</span> GIỜ <span class="minute">1</span> PHÚT <span class="second">1</span></h2>
+                <button class="c-btn1" onclick="showPage('shop')"><span>MUA NGAY</span></button>
             </div>
         </div>
+        <!-- Đánh giá khách hàng -->
         <div class="s-testimonial">
             <i class="fa-solid fa-quote-left"></i>
             <div class="b-testi">
                 <div class="b-testi-slide">
                     <p class="b-testi-feedback">
-                        I stumbled upon this online bag shop, and I'm so glad I did! The selection is fantastic, and I found a bag that perfectly matches my style. The ordering process was a breeze,
-                        and my bag arrived in pristine condition, beautifully packaged. The quality is outstanding, and I've already received compliments. I'll definitely be a repeat customer. Highly
-                        recommend!
+                        Tôi tình cờ gặp được cửa hàng túi trực tuyến này và tôi rất vui vì đã làm như vậy! Sự lựa chọn thật tuyệt vời và tôi đã tìm thấy một chiếc túi hoàn toàn phù hợp với phong cách
+                        của mình. Quá trình đặt hàng rất dễ dàng, và túi của tôi đến trong tình trạng nguyên sơ, được đóng gói đẹp mắt. Chất lượng vượt trội và tôi đã nhận được nhiều lời khen ngợi.
+                        Tôi chắc chắn sẽ là khách hàng lặp lại. cao gợi ý!
                     </p>
                     <h5>Alex Nguyen</h5>
-                    <p class="b-title">Customer</p>
+                    <p class="b-title">Khách hàng</p>
                 </div>
                 <div class="b-testi-slide">
                     <p class="b-testi-feedback">
-                        This online bag shop is a game-changer! I recently made my first purchase, and I was blown away by the quality of the bag and the smooth shopping experience. The website is
-                        user-friendly, and I found exactly what I was looking for in no time. The bag arrived quickly, and it exceeded my expectations in terms of both style and durability. I can't
-                        wait to shop here again!
+                        Cửa hàng túi trực tuyến này là một người thay đổi cuộc chơi! Gần đây tôi đã thực hiện giao dịch mua hàng đầu tiên và rất ấn tượng bởi chất lượng của túi cũng như trải nghiệm
+                        mua sắm suôn sẻ. Trang web là thân thiện với người dùng và tôi đã tìm thấy chính xác những gì tôi đang tìm kiếm ngay lập tức. Chiếc túi đến nhanh chóng và nó vượt quá sự mong
+                        đợi của tôi cả về kiểu dáng lẫn độ bền. tôi không thể chờ đợi để mua sắm ở đây một lần nữa!
                     </p>
                     <h5>Trung Tran</h5>
-                    <p class="b-title">Founder</p>
+                    <p class="b-title">Khách hàng</p>
                 </div>
                 <div class="b-testi-slide">
                     <p class="b-testi-feedback">
-                        This online bag shop is a hidden gem! I was on the hunt for a unique and stylish bag, and I struck gold here. The variety of bags they offer is impressive, and I found one that
-                        suits my personality perfectly. The checkout process was straightforward, and my bag arrived swiftly. The craftsmanship and attention to detail are exceptional. I'm thrilled
-                        with my purchase and will be sharing this fantastic find with my friends!
+                        Cửa hàng túi trực tuyến này là một viên ngọc ẩn! Tôi đang săn lùng một chiếc túi độc đáo và phong cách, và tôi đã trúng vàng ở đây. Họ cung cấp nhiều loại túi rất ấn tượng và
+                        tôi đã tìm thấy một chiếc phù hợp với tính cách của tôi một cách hoàn hảo. Quá trình thanh toán rất đơn giản và túi của tôi đã đến nơi nhanh chóng. Sự khéo léo và sự chú ý đến
+                        từng chi tiết là đặc biệt. tôi kinh sợ với giao dịch mua của tôi và sẽ chia sẻ phát hiện tuyệt vời này với bạn bè của tôi!
                     </p>
                     <h5>Jimmy Nguyen</h5>
-                    <p class="b-title">Customer</p>
+                    <p class="b-title">Khách hàng</p>
                 </div>
             </div>
             <div class="b-change">
@@ -374,6 +379,7 @@
                 <div onclick="changeSlideTesti(2)"></div>
             </div>
         </div>
+        <!-- Album sản phẩm -->
         <div class="s-gallery">
             <div class="b-galleryshow">
                 <img src="img/gallery/gallery-1.jpeg" alt="" />
@@ -394,6 +400,7 @@
                 </span>
             </div>
         </div>
+        <div class="c-scroll-btn"><i class="fa-sharp fa-regular fa-angles-up"></i></div>
         <div class="s-footer"></div>
         <!-- nhúng các thư viện ngoài vào đây -->
         <!-- nhúng các script tự viết vào đây -->

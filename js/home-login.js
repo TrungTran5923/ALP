@@ -21,26 +21,26 @@ function renderHeader() {
         </div>
         <div class="b-function">
             <div class="b-search">
-                <input type="text" placeholder="Search your products" />
-                <i class="fa-regular fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm sản phẩm" />
+            <i class="fa-regular fa-magnifying-glass"></i>
             </div>
             <div class="b-cart" href="cart.html">
                 <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                 <div class="b-cart-amount"><span>1</span></div>
                 <div class="b-cart-hover">
-                    <p class="note" style="display: none">Your cart is empty</p>
-                    <div class="b-cart-content">
+                <p class="note" style="display: none">Giỏ hàng trống</p>
+                <div class="b-cart-content">
                         <img src="img/gallery/gallery-1.jpeg" alt="" />
                         <div class="b-cart-text">
                             <p>ALP Brown Handbags</p>
-                            <p class="price">$ <span>800</span></p>
+                            <p class="price"><span>800.000</span>đ</p>
                         </div>
                     </div>
                     <div class="b-cart-content">
                         <img src="img/gallery/gallery-1.jpeg" alt="" />
                         <div class="b-cart-text">
                             <p>ALP Brown Handbags</p>
-                            <p class="price">$ <span>800</span></p>
+                            <p class="price"><span>800.000</span>đ</p>
                         </div>
                     </div>
                 </div>
@@ -57,22 +57,26 @@ function renderHeader() {
         </div>
         <div class="b-menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li>
-                    <a href="shop.html">SHOP</a>
-                    <ul class="b-submenu">
-                        <li><a href="shop.html">BIRKIN</a></li>
-                        <li><a href="shop.html">HANDBAG</a></li>
-                        <li><a href="shop.html">PURSE</a></li>
-                        <li><a href="shop.html">ACCESSORIES</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="service.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li>
+                <a href="shop.html">CỬA HÀNG <i class="fa-sharp fa-light fa-angle-down"></i></a>
+                <ul class="b-submenu">
+                    <li><a href="shop.html">TÚI BIRKIN</a></li>
+                    <li><a href="shop.html">TÚI CẦM TAY</a></li>
+                    <li><a href="shop.html">VÍ</a></li>
+                    <li><a href="shop.html">PHỤ KIỆN</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">VỀ CHÚNG TÔI</a></li>
+            <li><a href="service.html">DỊCH VỤ</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
             </ul>
         </div>
         <div class="b-function">
+        <div class="b-search">
+        <input type="text" placeholder="Tìm kiếm sản phẩm" />
+        <i class="fa-regular fa-magnifying-glass"></i>
+    </div>
             <div class="b-cart">
                 <i class="fa-sharp fa-solid fa-cart-shopping" href="cart.html"></i>
                 <div class="b-cart-amount"><span>1</span></div>
@@ -82,14 +86,14 @@ function renderHeader() {
                         <img src="img/gallery/gallery-1.jpeg" alt="" />
                         <div class="b-cart-text">
                             <p>ALP Brown Handbags</p>
-                            <p class="price">$ <span>800</span></p>
+                            <p class="price"><span>800.000</span>đ</p>
                         </div>
                     </div>
                     <div class="b-cart-content">
                         <img src="img/gallery/gallery-1.jpeg" alt="" />
                         <div class="b-cart-text">
                             <p>ALP Brown Handbags</p>
-                            <p class="price">$ <span>800</span></p>
+                            <p class="price"><span>800.000</span>đ</p>
                         </div>
                     </div>
                 </div>
@@ -159,3 +163,13 @@ function renderFooter() {
 }
 renderHeader();
 renderFooter();
+// Chuyển trang
+function showPage(page) {
+    window.location.href = `${page}.html`;
+}
+let btnMenu = document.querySelector(".b-menu-btn");
+let menu = document.querySelector(".b-menu ul");
+console.log(menu);
+btnMenu.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
