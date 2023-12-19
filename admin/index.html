@@ -11,35 +11,35 @@
         <!-- trick -->
         <link rel="stylesheet" href="../trick awesome/css/all.min.css" />
         <!-- css admin -->
-        <link rel="stylesheet" href="../css/admin.css" />
+        <link rel="stylesheet" href="../scss/style.css" />
     </head>
     <body>
         <div class="s-log">
             <div class="container">
-                <h1>SIGN IN</h1>
+                <h1>ĐĂNG NHẬP ADMIN</h1>
                 <img class="imgLogin" style="display: none" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hard-Drive-Error.png" alt="" />
                 <div id="s_frame">
                     <div class="c-input">
-                        <input required="" type="text" class="c_input" name="email" />
-                        <span class="c_highlight"></span>
+                        <input required="" type="text" class="c_input" name="email" placeholder="Nhập Email" />
+                        <!-- <span class="c_highlight"></span>
                         <span class="c_bar"></span>
-                        <label>Email</label>
+                        <label>Email</label> -->
                     </div>
                     <div class="c-input">
-                        <input required="" type="password" class="c_input" name="pass" />
-                        <span class="c_highlight"></span>
+                        <input required="" type="password" class="c_input" name="pass" placeholder="Nhập Mật khẩu" />
+                        <!-- <span class="c_highlight"></span>
                         <span class="c_bar"></span>
-                        <label>Password</label>
+                        <label>Password</label> -->
                     </div>
                     <div class="s_btn text-center">
-                        <button class="c-btn-2" type="submit">
-                            <span class="c_btn-1">SIGN IN</span>
-                            <span class="c_btn-2">SIGN IN</span>
+                        <button class="c-btn1" type="submit" onclick="showPage('admin-infoWebs')">
+                            <span class="c_btn-1">ĐĂNG NHẬP</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="../js/admin-js/admin-login.js"></script>
+        <script src="../js/admin/login.js"></script>
+        <script src="../js/base.js"></script>
     </body>
 </html>

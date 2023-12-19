@@ -2147,4 +2147,40 @@ body {
 }
 .s-user .right {
   color: black;
+}
+
+.s-log {
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+}
+.s-log .container h1 {
+  color: #ad6c6d;
+}
+.s-log .container .c-input {
+  width: 50%;
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: 0px 10px 0 10px;
+  padding: 10px 20px;
+}
+
+.s-info .s_left {
+  width: 25%;
+  height: 100vh;
+  background-color: beige;
+}
+.s-info .s_left .dashboard {
+  width: 100%;
+}
+.s-info .s_left .dashboard ul {
+  width: 50%;
+  margin: 30px auto;
+}
+.s-info .s_left .dashboard ul li span {
+  color: black;
+  margin-left: 10px;
+}
+.s-info .s_right {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */

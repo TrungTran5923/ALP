@@ -1,0 +1,23 @@
+.s-info {
+    .s_left {
+        width: 25%;
+        height: 100vh;
+        background-color: beige;
+        .dashboard {
+            width: 100%;
+            ul {
+                width: 50%;
+                margin: 30px auto;
+                li {
+                    span {
+                        color: black;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .s_right {
+        width: 60%;
+    }
+}

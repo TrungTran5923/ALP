@@ -1,0 +1,17 @@
+.s-log {
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    .container {
+        h1 {
+            color: $primary-color;
+        }
+        .c-input {
+            width: 50%;
+            margin: 30px auto;
+            border: 1px solid black;
+            border-radius: 0px 10px 0 10px;
+            padding: 10px 20px;
+        }
+    }
+}
